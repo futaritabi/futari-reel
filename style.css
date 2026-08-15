@@ -23,18 +23,24 @@ a{color:inherit}
 }
 .hero{
   position:relative;min-height:686px;overflow:hidden;
-  background:#06172d url('assets/hero-bg-v8.png') center 46%/cover no-repeat;
+  background:#06172d url('hero-bg-v9.png') center 49%/cover no-repeat;
   border-bottom:1px solid rgba(255,255,255,.06)
 }
 .hero-overlay{
   position:absolute;inset:0;
   background:
-    linear-gradient(90deg,rgba(1,10,25,.54) 0%,rgba(2,18,42,.42) 30%,rgba(3,25,51,.14) 60%,rgba(2,12,26,.04) 100%),
-    linear-gradient(180deg,rgba(1,7,17,.04) 0%,rgba(2,11,25,.015) 42%,rgba(2,10,23,.08) 72%,rgba(1,7,17,.28) 100%);
+    linear-gradient(90deg,rgba(1,10,25,.54) 0%,rgba(2,18,42,.36) 31%,rgba(3,25,51,.10) 58%,rgba(2,12,26,.01) 100%),
+    linear-gradient(180deg,rgba(1,7,17,.02) 0%,rgba(2,11,25,.01) 42%,rgba(2,10,23,.06) 72%,rgba(1,7,17,.22) 100%);
   pointer-events:none
 }
-.hero-moon{position:absolute;z-index:1;left:22%;top:40px;width:58px;height:58px;object-fit:contain;filter:drop-shadow(0 0 14px rgba(185,211,255,.42));pointer-events:none}
-.nav{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding-top:22px}
+
+.hero-moon{
+  position:absolute;z-index:2;left:calc((100% - min(1352px,calc(100% - 184px)))/2 + 245px);top:48px;
+  width:48px;height:48px;object-fit:cover;border-radius:50%;opacity:.92;
+  mix-blend-mode:screen;filter:drop-shadow(0 0 18px rgba(190,220,255,.52));pointer-events:none
+}
+
+.nav{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding-top:22px}
 .brand{
   text-decoration:none;font-family:"Yu Mincho",YuMincho,"Hiragino Mincho ProN",serif;
   font-size:28px;letter-spacing:.08em;color:#f4efe7
@@ -43,7 +49,7 @@ a{color:inherit}
   text-decoration:none;border:1px solid rgba(255,255,255,.46);padding:15px 42px;
   font-family:Georgia,"Times New Roman",serif;letter-spacing:.18em;font-size:15px;background:rgba(1,8,18,.14)
 }
-.hero-content{position:relative;z-index:2;padding-top:66px}
+.hero-content{position:relative;z-index:3;padding-top:66px}
 .hero-copy{max-width:710px}
 .eyebrow,.section-eyebrow{
   margin:0 0 22px;color:var(--coral2);font-family:Georgia,"Times New Roman",serif;
@@ -97,7 +103,9 @@ main{background:linear-gradient(180deg,#031224 0%,#02101f 100%)}
 footer{background:#020914;color:#9baabc;padding:44px 0;border-top:1px solid rgba(255,255,255,.06)}.footer-inner strong{font-family:"Yu Mincho",YuMincho,serif;font-size:20px;color:#fff}.footer-inner p{max-width:920px;font-size:11px;line-height:1.8}
 @media(max-width:900px){
   .wrap{width:min(100% - 28px,1352px)}.affiliate-note{font-size:10px;height:36px;letter-spacing:.08em}
-  .hero{min-height:740px;background-position:74% center}.hero-moon{left:22%;top:46px;width:48px;height:48px}.hero-overlay{background:linear-gradient(180deg,rgba(2,10,22,.24) 0%,rgba(2,10,22,.44) 58%,rgba(2,8,18,.64) 100%),linear-gradient(90deg,rgba(2,10,22,.68),rgba(2,10,22,.16))}
+  .hero{min-height:740px;background-position:76% center}
+  .hero-moon{left:auto;right:28%;top:58px;width:42px;height:42px;opacity:.90}
+.hero-overlay{background:linear-gradient(180deg,rgba(2,10,22,.24) 0%,rgba(2,10,22,.44) 58%,rgba(2,8,18,.64) 100%),linear-gradient(90deg,rgba(2,10,22,.68),rgba(2,10,22,.16))}
   .brand{font-size:20px}.instagram-link{padding:10px 18px;font-size:12px}.hero-content{padding-top:56px}.hero-copy{max-width:100%}
   h1{font-size:49px;line-height:1.42}.lead{font-size:16px;line-height:1.8}.cta{width:100%;padding:17px 22px;font-size:16px}
   .search-panel{grid-template-columns:1fr;margin-top:34px}.search-box{border-right:0;border-bottom:1px solid rgba(230,237,247,.24)}.search-box,.region-box{height:64px}.search-box input,.region-box select{font-size:16px}.search-icon{width:22px;height:22px}

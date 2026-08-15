@@ -1,13 +1,14 @@
-# 週末ふたり旅 V8
+# 週末ふたり旅 V9.1 最終版
 
-## 重要
-このZIPは、GitHubリポジトリ `futari-reel` の**ルート直下に上書きする前提**です。
-ZIPを解凍すると、`index.html` / `style.css` / `app.js` / `stays.json` / `assets` が直接出ます。
+GitHub Pages のリポジトリ直下へ、このフォルダ内のファイルをすべてアップロードしてください。
 
-## V8
-- 指定された完成イメージを基準にヒーロー構成を固定
-- 月：左上
-- 露天風呂・岩・湯けむり・黄色灯：右側
-- 左側は文字可読性を確保しつつ、背景を潰しすぎない
-- CSS/JSに `?v=8` を付け、ブラウザキャッシュを回避
-- 背景ファイル名も `hero-bg-v8.png` に変更
+重要: 画像ファイルも `index.html` と同じ階層です。`assets/` は使いません。
+
+- index.html
+- style.css
+- app.js
+- stays.json
+- hero-bg-v9.png
+- moon-v9.png
+
+表示確認後、古い hero-bg 系画像は残っていても参照されないため影響しません。
