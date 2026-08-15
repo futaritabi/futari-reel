@@ -3,29 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="週末ふたり旅｜温泉宿・旅館のリール紹介と予約導線" />
+  <meta name="description" content="週末ふたり旅｜ふたりで行きたい温泉宿を、短いリールと予約導線で紹介。" />
   <title>週末ふたり旅｜温泉宿リールまとめ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="ad-note">当サイトはアフィリエイト広告を利用しています</div>
+
   <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="./">週末ふたり旅</a>
+      <a class="nav-instagram" href="https://www.instagram.com/shumatsu_futari_tabi/" target="_blank" rel="noopener">Instagram ↗</a>
+    </nav>
+
     <div class="hero-inner">
       <p class="eyebrow">WEEKEND GETAWAY FOR TWO</p>
-      <h1>週末ふたり旅</h1>
-      <p class="lead">ふたりで行きたい温泉宿を、短いリールで。</p>
-      <a class="ig-btn" href="#" aria-label="Instagramへ">Instagramを見る</a>
+      <h1>次の休み、<br>ふたりでここへ。</h1>
+      <p class="lead">温泉、景色、ごはん。<br class="mobile-only">「行きたい」が見つかる宿だけを。</p>
+      <a class="hero-cta" href="#stays">宿を探す ↓</a>
     </div>
   </header>
 
   <main>
-    <section class="controls">
+    <section class="intro">
+      <p class="intro-kicker">CURATED FOR TWO</p>
+      <h2>ふたり旅目線で選ぶ、温泉宿。</h2>
+      <p>客室露天、景色、料理、記念日向け。リールで気になった宿を、ここからすぐ比較・予約できます。</p>
+    </section>
+
+    <section class="controls" aria-label="宿検索">
       <input id="search" type="search" placeholder="宿名・地域・特徴で検索" />
       <select id="region">
         <option value="">すべての地域</option>
       </select>
     </section>
 
-    <section>
+    <section id="stays">
       <div class="section-head">
         <div>
           <p class="eyebrow dark">FEATURED STAYS</p>
@@ -35,26 +48,50 @@
       </div>
       <div id="cards" class="grid"></div>
     </section>
+
+    <section class="concept">
+      <div>
+        <p class="eyebrow dark">HOW WE PICK</p>
+        <h2>「有名だから」だけでは選びません。</h2>
+      </div>
+      <div class="concept-copy">
+        <p>ふたりで過ごす時間に合うか、景色に驚きがあるか、料理まで記憶に残るか。リール映えだけでなく、実際に泊まりたくなる理由を整理して紹介します。</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>※ 宿泊料金・プラン内容は変更される場合があります。予約前に各予約サイトで最新情報をご確認ください。</p>
-    <p>※ 当サイトにはアフィリエイト広告を含む場合があります。</p>
+    <div class="footer-inner">
+      <strong>週末ふたり旅</strong>
+      <p>掲載情報は作成時点のものです。料金・プラン・設備等は変更される場合があります。予約前に各予約サイト・宿泊施設の最新情報をご確認ください。</p>
+      <p>当サイトにはアフィリエイト広告を含む場合があり、リンク経由の予約等により運営者が報酬を受け取ることがあります。</p>
+    </div>
   </footer>
 
   <template id="card-template">
     <article class="card">
-      <div class="image-wrap">
-        <img class="thumb" alt="" loading="lazy">
-        <span class="region-badge"></span>
-      </div>
+      <a class="image-link" target="_blank" rel="noopener">
+        <div class="image-wrap">
+          <img class="thumb" alt="" loading="lazy">
+          <span class="region-badge"></span>
+          <span class="number-badge"></span>
+        </div>
+      </a>
+
       <div class="card-body">
         <p class="hook"></p>
         <h3 class="name"></h3>
         <p class="features"></p>
+
+        <div class="meta-row">
+          <span class="price"></span>
+          <span class="recommend"></span>
+        </div>
+
         <div class="actions">
           <a class="reel-link" target="_blank" rel="noopener">リールを見る</a>
-          <a class="book-link" target="_blank" rel="sponsored noopener">空室・料金を見る</a>
+          <a class="rakuten-link" target="_blank" rel="sponsored noopener">楽天で見る</a>
+          <a class="jalan-link" target="_blank" rel="sponsored noopener">じゃらんで見る</a>
         </div>
       </div>
     </article>
