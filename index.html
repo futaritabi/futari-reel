@@ -4,15 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="週末ふたり旅｜ふたりで行きたい温泉宿を、短いリールと予約導線で紹介。" />
+  <meta name="futari-reel-version" content="8" />
   <title>週末ふたり旅</title>
-  <meta name="build" content="v7-bg-fixed2" />
-  <link rel="stylesheet" href="style.css?v=7-fixed2" />
+  <link rel="stylesheet" href="style.css?v=8" />
 </head>
 <body>
   <div class="affiliate-note">当サイトはアフィリエイト広告を利用しています</div>
 
   <header class="hero">
     <div class="hero-overlay"></div>
+    <img class="hero-moon" src="assets/moon-v8.png" alt="" aria-hidden="true">
     <nav class="nav wrap">
       <a class="brand" href="#">週末ふたり旅</a>
       <a class="instagram-link" href="https://www.instagram.com/shumatsu_futari_tabi/" target="_blank" rel="noopener">Instagram</a>
@@ -23,12 +24,12 @@
         <p class="eyebrow">WEEKEND GETAWAY FOR TWO</p>
         <h1>次の休み、<br>ふたりでここへ。</h1>
         <p class="lead">温泉、景色、ごはん。「行きたい」が見つかる宿だけを。</p>
-        <a class="cta" href="#featured">今日のおすすめを見る <span>→</span></a>
+        <a class="cta" href="#featured"><span class="cta-label">今日のおすすめを見る</span><span class="cta-arrow">→</span></a>
       </div>
 
       <div class="search-panel" aria-label="宿検索">
         <label class="search-box">
-          <span class="search-icon">⌕</span>
+          <span class="search-icon" aria-hidden="true"></span>
           <input id="searchInput" type="search" placeholder="宿名・地域・特徴で検索" />
         </label>
         <label class="region-box">
@@ -75,6 +76,6 @@
     </article>
   </template>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
