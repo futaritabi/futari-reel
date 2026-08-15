@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sample-kirishima",
+    "name": "サンプル温泉宿",
+    "region": "鹿児島・霧島",
+    "hook": "2人だけの世界、非日常がここにある",
+    "features": [
+      "絶景露天風呂",
+      "地元食材の会席",
+      "ふたり旅向け"
+    ],
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "reel_url": "",
+    "affiliate_url": ""
+  }
+]

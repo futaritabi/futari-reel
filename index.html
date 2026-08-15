@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="週末ふたり旅｜温泉宿・旅館のリール紹介と予約導線" />
+  <title>週末ふたり旅｜温泉宿リールまとめ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">WEEKEND GETAWAY FOR TWO</p>
+      <h1>週末ふたり旅</h1>
+      <p class="lead">ふたりで行きたい温泉宿を、短いリールで。</p>
+      <a class="ig-btn" href="#" aria-label="Instagramへ">Instagramを見る</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input id="search" type="search" placeholder="宿名・地域・特徴で検索" />
+      <select id="region">
+        <option value="">すべての地域</option>
+      </select>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">FEATURED STAYS</p>
+          <h2>紹介した温泉宿</h2>
+        </div>
+        <span id="count"></span>
+      </div>
+      <div id="cards" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>※ 宿泊料金・プラン内容は変更される場合があります。予約前に各予約サイトで最新情報をご確認ください。</p>
+    <p>※ 当サイトにはアフィリエイト広告を含む場合があります。</p>
+  </footer>
+
+  <template id="card-template">
+    <article class="card">
+      <div class="image-wrap">
+        <img class="thumb" alt="" loading="lazy">
+        <span class="region-badge"></span>
+      </div>
+      <div class="card-body">
+        <p class="hook"></p>
+        <h3 class="name"></h3>
+        <p class="features"></p>
+        <div class="actions">
+          <a class="reel-link" target="_blank" rel="noopener">リールを見る</a>
+          <a class="book-link" target="_blank" rel="sponsored noopener">空室・料金を見る</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
