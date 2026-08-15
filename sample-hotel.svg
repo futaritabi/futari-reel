@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9d2ca"/><stop offset="1" stop-color="#8f7c6c"/></linearGradient><linearGradient id="water" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7b8580"/><stop offset="1" stop-color="#404946"/></linearGradient></defs><rect width="1600" height="1000" fill="url(#sky)"/><path d="M0 540 C230 400 390 455 550 330 C700 215 880 420 1030 320 C1180 220 1390 350 1600 260 L1600 1000 L0 1000 Z" fill="#665e57"/><path d="M0 620 C210 500 390 570 570 455 C760 335 930 560 1100 470 C1260 385 1420 460 1600 400 L1600 1000 L0 1000 Z" fill="#4b4743"/><rect x="0" y="690" width="1600" height="310" fill="url(#water)"/><ellipse cx="800" cy="770" rx="560" ry="125" fill="#b7aaa0" opacity=".18"/><g fill="none" stroke="#eee7df" stroke-width="9" opacity=".55"><path d="M430 675 C395 610 500 575 470 510"/><path d="M745 700 C705 620 810 595 775 520"/><path d="M1080 680 C1040 600 1135 570 1105 505"/></g><rect x="950" y="575" width="360" height="100" rx="4" fill="#342f2c"/><rect x="990" y="520" width="280" height="70" fill="#51463f"/><rect x="1015" y="545" width="70" height="30" fill="#d7c3a6"/><rect x="1100" y="545" width="70" height="30" fill="#d7c3a6"/><rect x="1185" y="545" width="55" height="30" fill="#d7c3a6"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#23508a"/>
+    <stop offset="1" stop-color="#0b1d35"/>
+  </linearGradient>
+  <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#304f6a"/>
+    <stop offset="1" stop-color="#0b1f36"/>
+  </linearGradient>
+  <linearGradient id="mount1" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#415d74"/>
+    <stop offset="1" stop-color="#2d4055"/>
+  </linearGradient>
+  <linearGradient id="mount2" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#2f445b"/>
+    <stop offset="1" stop-color="#1d2d40"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<circle cx="1230" cy="170" r="100" fill="#f0d890" opacity=".22"/>
+<path d="M0 500 C220 360 430 430 640 300 C780 210 980 350 1160 270 C1300 210 1440 260 1600 180 L1600 1000 L0 1000 Z" fill="url(#mount1)"/>
+<path d="M0 620 C240 520 430 570 590 470 C780 350 940 560 1120 470 C1270 395 1425 460 1600 400 L1600 1000 L0 1000 Z" fill="url(#mount2)"/>
+<rect x="0" y="680" width="1600" height="320" fill="url(#water)"/>
+<ellipse cx="780" cy="760" rx="480" ry="110" fill="#c8d9de" opacity=".14"/>
+<g fill="none" stroke="#eee7df" stroke-width="8" opacity=".62">
+  <path d="M445 675 C405 612 505 585 480 510"/>
+  <path d="M735 705 C690 640 792 610 768 532"/>
+  <path d="M1060 690 C1028 630 1120 590 1096 522"/>
+</g>
+<rect x="980" y="545" width="275" height="68" fill="#342d31"/>
+<rect x="940" y="600" width="350" height="90" rx="4" fill="#262228"/>
+<rect x="1008" y="565" width="62" height="24" fill="#f4ddb6"/>
+<rect x="1085" y="565" width="62" height="24" fill="#f4ddb6"/>
+<rect x="1162" y="565" width="62" height="24" fill="#f4ddb6"/>
+</svg>
