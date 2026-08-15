@@ -26,14 +26,14 @@ a{color:inherit}
 }
 .hero{
   position:relative;min-height:685px;overflow:hidden;
-  background:url('assets/hero-bg.png') 64% center/cover no-repeat;
+  background:url('assets/hero-bg.png') center center/cover no-repeat;
   border-bottom:1px solid rgba(255,255,255,.06)
 }
 .hero-overlay{
   position:absolute;inset:0;
   background:
-    linear-gradient(90deg,rgba(2,10,22,.85) 0%,rgba(3,16,34,.75) 28%,rgba(5,24,46,.46) 58%,rgba(3,14,29,.20) 100%),
-    linear-gradient(180deg,rgba(2,9,18,.22) 0%,rgba(3,14,30,.08) 38%,rgba(3,12,25,.20) 74%,rgba(2,8,18,.58) 100%);
+    linear-gradient(90deg,rgba(2,10,22,.76) 0%,rgba(3,16,34,.68) 30%,rgba(5,24,46,.40) 58%,rgba(3,14,29,.14) 100%),
+    linear-gradient(180deg,rgba(2,9,18,.18) 0%,rgba(3,14,30,.05) 40%,rgba(3,12,25,.14) 72%,rgba(2,8,18,.46) 100%);
   pointer-events:none
 }
 .nav{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding-top:22px}
@@ -106,8 +106,8 @@ footer{background:#020914;color:#9baabc;padding:44px 0;border-top:1px solid rgba
 @media(max-width:900px){
   .wrap{width:min(100% - 28px,1440px)}
   .affiliate-note{font-size:10px;height:36px;letter-spacing:.08em}
-  .hero{min-height:740px;background-position:72% center}
-  .hero-overlay{background:linear-gradient(180deg,rgba(2,10,22,.34) 0%,rgba(2,10,22,.54) 58%,rgba(2,8,18,.72) 100%),linear-gradient(90deg,rgba(2,10,22,.74),rgba(2,10,22,.22))}
+  .hero{min-height:740px;background-position:74% center}
+  .hero-overlay{background:linear-gradient(180deg,rgba(2,10,22,.26) 0%,rgba(2,10,22,.46) 58%,rgba(2,8,18,.66) 100%),linear-gradient(90deg,rgba(2,10,22,.68),rgba(2,10,22,.18))}
   .brand{font-size:20px}.instagram-link{padding:10px 18px;font-size:12px}
   .hero-content{padding-top:56px}.hero-copy{max-width:100%}
   h1{font-size:49px;line-height:1.42}.lead{font-size:16px;line-height:1.8}
