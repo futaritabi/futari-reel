@@ -1,28 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
 <defs>
   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#23508a"/>
-    <stop offset="1" stop-color="#0b1d35"/>
+    <stop offset="0" stop-color="#11325d"/>
+    <stop offset="1" stop-color="#071426"/>
   </linearGradient>
+  <radialGradient id="moonGlow" cx="77%" cy="18%" r="25%">
+    <stop offset="0" stop-color="#f7eed2" stop-opacity="0.58"/>
+    <stop offset="0.20" stop-color="#f7eed2" stop-opacity="0.15"/>
+    <stop offset="1" stop-color="#f7eed2" stop-opacity="0"/>
+  </radialGradient>
   <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#304f6a"/>
-    <stop offset="1" stop-color="#0b1f36"/>
+    <stop offset="0" stop-color="#476679"/>
+    <stop offset="1" stop-color="#142436"/>
   </linearGradient>
   <linearGradient id="mount1" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#415d74"/>
-    <stop offset="1" stop-color="#2d4055"/>
+    <stop offset="0" stop-color="#43576b"/>
+    <stop offset="1" stop-color="#27384a"/>
   </linearGradient>
   <linearGradient id="mount2" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#2f445b"/>
-    <stop offset="1" stop-color="#1d2d40"/>
+    <stop offset="0" stop-color="#314557"/>
+    <stop offset="1" stop-color="#1c2b3d"/>
   </linearGradient>
 </defs>
 <rect width="1600" height="1000" fill="url(#sky)"/>
-<circle cx="1230" cy="170" r="100" fill="#f0d890" opacity=".22"/>
+<rect width="1600" height="1000" fill="url(#moonGlow)"/>
+<circle cx="1240" cy="165" r="62" fill="#f6eed8" opacity=".82"/>
 <path d="M0 500 C220 360 430 430 640 300 C780 210 980 350 1160 270 C1300 210 1440 260 1600 180 L1600 1000 L0 1000 Z" fill="url(#mount1)"/>
 <path d="M0 620 C240 520 430 570 590 470 C780 350 940 560 1120 470 C1270 395 1425 460 1600 400 L1600 1000 L0 1000 Z" fill="url(#mount2)"/>
 <rect x="0" y="680" width="1600" height="320" fill="url(#water)"/>
-<ellipse cx="780" cy="760" rx="480" ry="110" fill="#c8d9de" opacity=".14"/>
+<ellipse cx="780" cy="760" rx="480" ry="110" fill="#d3e0e5" opacity=".14"/>
+<ellipse cx="800" cy="775" rx="360" ry="74" fill="#dce7ea" opacity=".06"/>
 <g fill="none" stroke="#eee7df" stroke-width="8" opacity=".62">
   <path d="M445 675 C405 612 505 585 480 510"/>
   <path d="M735 705 C690 640 792 610 768 532"/>
@@ -30,7 +37,7 @@
 </g>
 <rect x="980" y="545" width="275" height="68" fill="#342d31"/>
 <rect x="940" y="600" width="350" height="90" rx="4" fill="#262228"/>
-<rect x="1008" y="565" width="62" height="24" fill="#f4ddb6"/>
-<rect x="1085" y="565" width="62" height="24" fill="#f4ddb6"/>
-<rect x="1162" y="565" width="62" height="24" fill="#f4ddb6"/>
+<rect x="1008" y="565" width="62" height="24" fill="#f4ddb6" opacity=".8"/>
+<rect x="1085" y="565" width="62" height="24" fill="#f4ddb6" opacity=".8"/>
+<rect x="1162" y="565" width="62" height="24" fill="#f4ddb6" opacity=".8"/>
 </svg>
