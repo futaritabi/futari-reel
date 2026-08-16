@@ -17,7 +17,19 @@ function render(list){
     const reel=node.querySelector('.reel-btn');
     reel.href=stay.reel_url||'#';
     const book=node.querySelector('.book-btn');
-    book.href=stay.book_url||'#';
+    const bookUrl=stay.book_url||'';
+    book.textContent='楽天トラベルで予約を見る';
+    if(bookUrl && bookUrl !== '#'){
+      book.href=bookUrl;
+      book.removeAttribute('target');
+      book.addEventListener('click',(e)=>{
+        e.preventDefault();
+        window.location.assign(bookUrl);
+      });
+    }else{
+      book.href='#';
+      book.addEventListener('click',(e)=>e.preventDefault());
+    }
     cards.appendChild(node);
   });
 }
@@ -29,7 +41,7 @@ function filterStays(){
     return (!q||hay.includes(q))&&(!r||s.region===r);
   }));
 }
-fetch('stays.json').then(r=>r.json()).then(data=>{
+fetch('stays.json?v=93-bookfix').then(r=>r.json()).then(data=>{
   stays=data;
   [...new Set(stays.map(s=>s.region))].forEach(r=>{
     const o=document.createElement('option');o.value=r;o.textContent=r;regionSelect.appendChild(o);
