@@ -128,3 +128,5 @@ footer{background:#020914;color:#9baabc;padding:44px 0;border-top:1px solid rgba
   .search-panel{grid-template-columns:1fr;margin-top:34px}.search-box{border-right:0;border-bottom:1px solid rgba(230,237,247,.24)}.search-box,.region-box{height:64px}.search-box input,.region-box select{font-size:16px}.search-icon{width:22px;height:22px}
   .featured h2{font-size:34px}.stay-grid{grid-template-columns:1fr}.stay-name{font-size:24px}.stay-copy{font-size:14px;min-height:auto}.stay-actions{grid-template-columns:1fr}.stay-actions a{min-height:44px}
 }
+
+.jalan-tracker{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}

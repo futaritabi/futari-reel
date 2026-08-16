@@ -52,6 +52,15 @@ function render(list) {
     const jalan = node.querySelector('.jalan-btn');
     setActionState(jalan, stay.jalan_enabled ? 'じゃらんで見る' : 'じゃらん 準備中', stay.jalan_url, stay.jalan_enabled);
 
+    const jalanTracker = node.querySelector('.jalan-tracker');
+    if (jalanTracker) {
+      if (stay.jalan_enabled && stay.jalan_tracking_pixel) {
+        jalanTracker.src = stay.jalan_tracking_pixel;
+      } else {
+        jalanTracker.remove();
+      }
+    }
+
     if (!stay.rakuten_enabled || !stay.jalan_enabled) {
       card.classList.add('has-disabled-link');
     }
@@ -69,7 +78,7 @@ function filterStays() {
   }));
 }
 
-fetch('stays.json?v=11-cardfix')
+fetch('stays.json?v=12-jalan')
   .then((r) => r.json())
   .then((data) => {
     stays = data;

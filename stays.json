@@ -7,7 +7,7 @@
     "image": "oirase-card-photo-v11.png",
     "reel_url": "https://www.instagram.com/reel/DYPGx4WkVNM/",
     "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/5369a4cc.fd71e3dc.5369a4cd.518db42c/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F40434%2F40434.html&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9",
-    "jalan_url": "",
+    "jalan_url": "https://px.a8.net/svt/ejp?a8mat=4B1U9S+DDNP6A+14CS+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.jalan.net%2Fyad307225%2F%3FyadNo%3D307225%26convertedFlg%3D1%26ccnt%3Dlink-yad-307225-%25E5%25A5%25A5%25E5%2585%25A5-0",
     "tags": [
       "渓流露天風呂",
       "奥入瀬渓流",
@@ -15,6 +15,7 @@
     ],
     "image_note": "リールの雰囲気に合わせた掲載用イメージ",
     "rakuten_enabled": true,
-    "jalan_enabled": false
+    "jalan_enabled": true,
+    "jalan_tracking_pixel": "https://www11.a8.net/0.gif?a8mat=4B1U9S+DDNP6A+14CS+BW8O2"
   }
 ]
