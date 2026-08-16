@@ -130,3 +130,24 @@ footer{background:#020914;color:#9baabc;padding:44px 0;border-top:1px solid rgba
 }
 
 .jalan-tracker{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+
+.no-booking-links{filter:saturate(.88)}
+.no-booking-links .stay-image{filter:saturate(.78) brightness(.88)}
+.no-booking-links .stay-body{background:linear-gradient(180deg,rgba(5,23,42,.12),rgba(2,14,27,.22))}
+
+.image-pending{
+  display:flex;align-items:center;justify-content:center;
+  background:
+    radial-gradient(circle at 68% 28%,rgba(121,155,193,.18),transparent 32%),
+    linear-gradient(135deg,#173b61 0%,#0c2c4a 50%,#08233d 100%);
+}
+.image-pending::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 0 42%,rgba(255,255,255,.035) 50%,transparent 58%);
+}
+.image-pending-label{
+  position:relative;z-index:1;
+  padding:10px 16px;border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;background:rgba(2,12,25,.38);
+  color:#d7e3ef;font-size:12px;letter-spacing:.08em;
+}

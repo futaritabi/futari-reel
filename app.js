@@ -26,11 +26,25 @@ function render(list) {
     const node = tpl.content.cloneNode(true);
     const card = node.querySelector('.stay-card');
     const img = node.querySelector('.stay-image');
-    img.src = stay.image;
-    img.alt = stay.name;
+    const imageWrap = node.querySelector('.stay-image-wrap');
+    if (stay.image) {
+      img.src = stay.image;
+      img.alt = stay.name;
+    } else {
+      img.remove();
+      imageWrap.classList.add('image-pending');
+      const pending = document.createElement('div');
+      pending.className = 'image-pending-label';
+      pending.textContent = 'リール画像 準備中';
+      imageWrap.appendChild(pending);
+    }
     node.querySelector('.stay-region').textContent = stay.region;
     node.querySelector('.stay-name').textContent = stay.name;
     node.querySelector('.stay-copy').textContent = stay.copy;
+    const badge = node.querySelector('.recommend-badge');
+    const badgeText = stay.recommend_label || (stay.featured ? '今週のおすすめ' : '');
+    badge.textContent = badgeText;
+    if (!badgeText) badge.style.display = 'none';
 
     const note = node.querySelector('.image-note');
     note.textContent = stay.image_note || '';
@@ -44,7 +58,7 @@ function render(list) {
     });
 
     const reel = node.querySelector('.reel-btn');
-    setActionState(reel, 'リールを見る', stay.reel_url, !!stay.reel_url);
+    setActionState(reel, stay.reel_enabled === false ? 'リール 準備中' : 'リールを見る', stay.reel_url, stay.reel_enabled !== false && !!stay.reel_url);
 
     const rakuten = node.querySelector('.rakuten-btn');
     setActionState(rakuten, stay.rakuten_enabled ? '楽天で見る' : '楽天 準備中', stay.rakuten_url, stay.rakuten_enabled);
@@ -61,8 +75,8 @@ function render(list) {
       }
     }
 
-    if (!stay.rakuten_enabled || !stay.jalan_enabled) {
-      card.classList.add('has-disabled-link');
+    if (!stay.rakuten_enabled && !stay.jalan_enabled) {
+      card.classList.add('no-booking-links');
     }
 
     cards.appendChild(node);
@@ -78,10 +92,10 @@ function filterStays() {
   }));
 }
 
-fetch('stays.json?v=12-jalan')
+fetch('stays.json?v=15-booking-gate')
   .then((r) => r.json())
   .then((data) => {
-    stays = data;
+    stays = data.filter((s) => s.rakuten_available === true || s.jalan_available === true);
     [...new Set(stays.map((s) => s.region))].forEach((r) => {
       const o = document.createElement('option');
       o.value = r;

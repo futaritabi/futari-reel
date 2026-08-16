@@ -1,0 +1,26 @@
+{
+  "id": "hotel-slug",
+  "name": "旅館・ホテル名",
+  "region": "都道府県・温泉地",
+  "copy": "2〜3行で収まる短い紹介文。ふたり旅で行きたくなる特徴を簡潔に。",
+  "image": "card-photo-example.png",
+  "reel_url": "https://www.instagram.com/reel/XXXXXXXXXXX/",
+  "reel_enabled": true,
+  "rakuten_url": "",
+  "rakuten_enabled": false,
+  "jalan_url": "",
+  "jalan_enabled": false,
+  "jalan_tracking_pixel": "",
+  "tags": [
+    "客室露天風呂",
+    "絶景",
+    "記念日"
+  ],
+  "image_note": "リール動画の切り抜き",
+  "featured": false,
+  "recommend_label": "",
+  "rakuten_available": false,
+  "jalan_available": false,
+  "rakuten_listing_url": "",
+  "jalan_listing_url": ""
+}

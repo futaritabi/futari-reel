@@ -16,6 +16,37 @@
     "image_note": "リールの雰囲気に合わせた掲載用イメージ",
     "rakuten_enabled": true,
     "jalan_enabled": true,
-    "jalan_tracking_pixel": "https://www11.a8.net/0.gif?a8mat=4B1U9S+DDNP6A+14CS+BW8O2"
+    "jalan_tracking_pixel": "https://www11.a8.net/0.gif?a8mat=4B1U9S+DDNP6A+14CS+BW8O2",
+    "featured": true,
+    "recommend_label": "今週のおすすめ",
+    "reel_enabled": true,
+    "rakuten_available": true,
+    "jalan_available": true
+  },
+  {
+    "id": "ryokusuitei-keisui",
+    "name": "大町温泉郷 緑翠亭 景水",
+    "region": "長野・大町温泉郷",
+    "copy": "北アルプスと鹿島川に寄り添う湯宿。庭園露天風呂や露天風呂付き客室で、信州の自然をゆっくり楽しむふたり旅へ。",
+    "image": "",
+    "reel_url": "",
+    "reel_enabled": false,
+    "rakuten_available": true,
+    "rakuten_listing_url": "https://travel.rakuten.co.jp/HOTEL/3116/3116.html",
+    "rakuten_url": "",
+    "rakuten_enabled": false,
+    "jalan_available": true,
+    "jalan_listing_url": "https://www.jalan.net/yad388885/",
+    "jalan_url": "",
+    "jalan_enabled": false,
+    "jalan_tracking_pixel": "",
+    "tags": [
+      "庭園露天風呂",
+      "露天風呂付き客室",
+      "北アルプス"
+    ],
+    "image_note": "",
+    "featured": false,
+    "recommend_label": ""
   }
 ]
