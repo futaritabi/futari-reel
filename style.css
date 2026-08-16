@@ -23,7 +23,7 @@ a{color:inherit}
 }
 .hero{
   position:relative;min-height:686px;overflow:hidden;
-  background:#06172d url('hero-bg-v9.png') center 49%/cover no-repeat;
+  background:#06172d url('hero-bg-singlemoon-v92.png') center 49%/cover no-repeat;
   border-bottom:1px solid rgba(255,255,255,.06)
 }
 .hero-overlay{
@@ -34,11 +34,6 @@ a{color:inherit}
   pointer-events:none
 }
 
-.hero-moon{
-  position:absolute;z-index:2;left:calc((100% - min(1352px,calc(100% - 184px)))/2 + 245px);top:48px;
-  width:48px;height:48px;object-fit:cover;border-radius:50%;opacity:.92;
-  mix-blend-mode:screen;filter:drop-shadow(0 0 18px rgba(190,220,255,.52));pointer-events:none
-}
 
 .nav{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding-top:22px}
 .brand{
@@ -104,7 +99,6 @@ footer{background:#020914;color:#9baabc;padding:44px 0;border-top:1px solid rgba
 @media(max-width:900px){
   .wrap{width:min(100% - 28px,1352px)}.affiliate-note{font-size:10px;height:36px;letter-spacing:.08em}
   .hero{min-height:740px;background-position:76% center}
-  .hero-moon{left:auto;right:28%;top:58px;width:42px;height:42px;opacity:.90}
 .hero-overlay{background:linear-gradient(180deg,rgba(2,10,22,.24) 0%,rgba(2,10,22,.44) 58%,rgba(2,8,18,.64) 100%),linear-gradient(90deg,rgba(2,10,22,.68),rgba(2,10,22,.16))}
   .brand{font-size:20px}.instagram-link{padding:10px 18px;font-size:12px}.hero-content{padding-top:56px}.hero-copy{max-width:100%}
   h1{font-size:49px;line-height:1.42}.lead{font-size:16px;line-height:1.8}.cta{width:100%;padding:17px 22px;font-size:16px}
